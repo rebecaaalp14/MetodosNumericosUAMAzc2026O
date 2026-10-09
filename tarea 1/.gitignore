@@ -1,1 +1,13 @@
+# Ejecutables de C
+*.exe
+*.out
+
+# Archivos objeto
+*.o
+
+# Carpeta
+__pycache__/
+
+# Archivo
+octave-workspace
 
