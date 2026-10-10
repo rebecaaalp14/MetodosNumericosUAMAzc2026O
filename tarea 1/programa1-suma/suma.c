@@ -10,7 +10,7 @@ la función *double*, la cual almacena de 15 a 17 cifras significativas (8 bytes
 int main(int argc, char *argv[]) {
     double a, b;
 
-    if(argc == 3) {                         //si se reciben 3 variables (el nombre el programa y dos números)
+    if(argc == 3) {                         //si se reciben 3 variables (el nombre el programa y dos números). pero no hay "scanf" para solicitar los datos. entonces se ejecuta la instrucción.
         a = strtod(argv[1], NULL);
         b = strtod(argv[2], NULL);
     }

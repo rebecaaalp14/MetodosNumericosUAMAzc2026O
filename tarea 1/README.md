@@ -58,9 +58,9 @@ Ej. Si *x'* es una aproximación a *x*
 * *Error en por ciento*:
 		%E = (|x' - x|)/x * 100
 
-## Bibliografía
+### Bibliografía
 1. Nieves Hurtado, A. (2012). Métodos numéricos: aplicados a la ingeniería (4 Ed.)
-   [E-Book]. Grupo Editorial Patria.
+   [E-Book]. Grupo Editorial Patria.2
 2. Métodos numéricos aplicados con MATLAB para ingenieros y científicos (5ta Edición).
    (2023). [E-Book]. McGraw-Hill.
 3. Llamas, L. (2024, 29 marzo). Qué son Bits, Bytes, Char, Words, MSB y LSB. Luis
@@ -73,13 +73,65 @@ En la ingeniería mecánica se diseñan, manipulan, prueban y mantienen equipos,
 sistemas mecánicos. En lo que llevo de la carrera, hay muchos procesos en los que se 
 necesitan cálculos exactos.
 
-Por ejemplo, en el análisis de materiales se realizan ensayos de tensión 
+### Mecánica de Sólidos
 
+Por ejemplo, está la mecánica de sólidos. Antes de tomar este curso se nos enseña 
+análisis estructural, donde se ve a qué cargas se someten algunas estructuras y como 
+deben ser soportados para no vencerse.
 
+La mecánica de sólidos estudia el commportamiento de materiales sólidos ante la 
+deformación, esfuerzos, rigidez y movimiento cuando algo altera su estado (temperatura, 
+fuerzas, etc). Para ellas se aplican ecuaciones diferenciales, pero como son muy 
+complicadas de resolver con fórmulas exactas, se usan métodos numéricos.
 
+Por ejemplo, pensando en el diseño de un parachoques de un auto, se usa el **método de 
+los elementos finitos** (MEF). Divide la pieza o sólido en miles de piezas chiquitas 
+"*elementos*" y puntos "*nodos*" para calcular todos los esfuerzos y deformaciones a las 
+que se somete.
+Es decir; no se enfoca en el cálculo simple y directo de una propiedad. Es necesario 
+tomar muchos pedacitos, lo que extiende el cálculo provocando que sea posible cometer 
+errores más grandes.
+
+### Transferencia de Calor
+Se enfoca en el flujo y transmisión de energí térmica entre sistemas debido a una 
+diferencia de temperatura (como equilibrio).
+
+Esta energía (calor) se transmite mediante la conducción (contacto directo entre 
+cuerpos), convección (movimiento de fluidos) y radiación (energía como ondas 
+electromagnéticas sin estar en contacto directo).
+
+Entre más variables se añadan a esta transferencia, en forma matemática como condiciones 
+variables de entorno o ecuaciones diferenciales parcialesno lineales; el cálculo se 
+complica.
+
+Como en la mecánica de sólidos, también se puede usar el **método de los elementos 
+finitos** para calcular aproximadamente el campo de temperatura.
+
+Para la conducción de calor, se utiliza el **método de diferencias finitas**, en el cual 
+reemplazan derivadas en ecuacioned diferenciales con diferencias finitas basadas en 
+expansiones de series de Taylor 
+      Es decir, sustituyen el uso de derivadas en ecuaciones diferenciales con pequeñas 
+      particiones
+calculando la temperatura en cada nodo del sólido simple. No es exacto en cuerpos 
+irregulares.
+
+**En síntesis:**
+
+**Fenómeno físico -> Modelo matemático + Muchas variables -> Mejor aproximación con métodos numéricos**
+
+### BIBLIOGRAFÍA
+1. Joshi, P. (2024). Métodos numéricos para problemas de transferencia de calor en 
+sistemas compuestos. ScienceDirect.
+https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780443190094000230
+2. ¿Cómo se utilizan métodos numéricos para modelar la conducción de calor en sólidos? 
+(2023, 15 agosto). www.linkedin.com.
+https://es.linkedin.com/advice/0/how-do-you-use-numerical-methods-model-heat?lang=es&lang=es
+3. Desarrollo y análisis de métodos numéricos aplicados a mecánica de sólidos y 
+fluidos | Portal UCR SO. (s. f.).
+https://portal.so.ucr.ac.cr/matematica/proyectos/desarrollo-y-analisis-de-metodos-numericos-aplicados-mecanica-de
 
 
 ## #3 Herramientas para trabajar con métodos numéricos
-En lo que va del curso hemos visto las bases para trabajar con varios programas para
+En lo que va del curso hemos visto las bases para trabajar con varios programas para 
 
 ## #4 Herramientas empleadas en el cur
