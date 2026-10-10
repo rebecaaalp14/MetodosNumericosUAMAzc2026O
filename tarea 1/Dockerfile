@@ -30,5 +30,5 @@ ENV LANG=C.UTF-8 \
     TZ=America/Mexico_City \
     MPLBACKEND=Agg
 
-WORKDIR /trabajo
+WORKDIR /tarea1
 CMD ["bash"]
