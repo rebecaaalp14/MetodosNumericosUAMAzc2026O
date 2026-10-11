@@ -1,0 +1,20 @@
+# Entorno del curso · Métodos Numéricos en Ingeniería (1151039) · 26-O
+# Igual tomé este archivo como base para levantar el contenedor.
+#   docker compose up -d                 prender
+#   docker compose exec metodos bash     entrar a trabajar
+#   docker compose stop                  apagar
+#
+
+services:
+  tarea1:
+    build: .                        
+    image: metodos_2233074972_tareas
+    container_name: metodos_tarea1
+    volumes:
+      - ./:/tarea1                 
+    working_dir: /tarea1
+    stdin_open: true               
+    tty: true                       
+    environment:
+      OMP_NUM_THREADS: "1"          
+      MPLBACKEND: "Agg"            
