@@ -8,8 +8,8 @@
 services:
   tarea1:
     build: .                        
-    image: metodos_2233074972_tareas
-    container_name: metodos_tarea1
+    image: metodos_tarea1
+    container_name: metodos_2233074972_tareas
     volumes:
       - ./:/tarea1                 
     working_dir: /tarea1
