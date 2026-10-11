@@ -117,7 +117,7 @@ irregulares.
 
 **En síntesis:**
 
-**Fenómeno físico -> Modelo matemático + Muchas variables -> Mejor aproximación con métodos numéricos**
+**Fenómeno físico -> Modelo matemático + Muchas variables -> Difícil de resolver con fórmulas simples -> Mejor aproximación con métodos numéricos**
 
 ### BIBLIOGRAFÍA
 1. Joshi, P. (2024). Métodos numéricos para problemas de transferencia de calor en 
@@ -132,6 +132,40 @@ https://portal.so.ucr.ac.cr/matematica/proyectos/desarrollo-y-analisis-de-metodo
 
 
 ## #3 Herramientas para trabajar con métodos numéricos
-En lo que va del curso hemos visto las bases para trabajar con varios programas para 
+ 
 
-## #4 Herramientas empleadas en el cur
+## #4 Herramientas empleadas en el curso
+En lo que va del curso hemos visto las bases para trabajar con varios programas para trabajar con la creación de repositorios, contenedores. Almacenamiento de programas e instrucciones y el funcionamiento de los métodos numéricos.
+
+### Docker
+Docker es un programa que funciona como máquina virtual. Funge como una computadora física en forma de software para ejecutar funciones y ocupar un espacio virtual. Lo que hace es organizar y separar procesos para poder ejecutarlos al mismo tiempo
+   ### Entorno
+dockerfile y compose.yaml
+* **Dockerfile:** El Dockerfile es un archivo que contiene los datos que requiere el contenedor para poder levantar los programas: lenguajes de programación, recursos para instalar, etc. Y contiene comandos para CONSTRUIR la imagen de un contenedor. "docker build".
+* **compose.yaml:** Compose.yaml es la versión más reciente de este archivo, funciona con WSL 2. Sirve para levantar la imagen, con un solo comando "docker compose up"
+* **Comandos para poner en marcha/administrar el contenedor:**
+   * up: Construye las imágenes y levanta el contenedor.
+   * -d: Ejecuta las imágenes en segundo plano
+   * exec: Ejecut un comando dentro de un contenedor activo.
+   * stop: Detiene los contenedores.
+   * down: Detiene el contenedor y borra los volúmenes.
+   * ps: Muestra el estado actual de los contenedores (si está activo o inactivo).
+   * ls: Muestra los archivos o carpetas dentro de ese contenedor.
+* **Apagar, prender y borrar el contenedor:**
+El comando "stop" puede ser util para apagar todos los contenedores trabajando y dejar de consumir espacio en la RAM. Apagarlo detiene los procesos que se están ejecutando, pero siguen guardados, esperando a reactivarse. 
+Borrarlos con "down", borra completamente el contenedor y sus datos temporales almacenados. Debe levantarse otra vez.
+
+   ### Lenguajes de programación
+* **GNU Octave:** Es una alternativa gratuita para MATLAB. Sirve para poder compilar códigos en Octave. Y es mejor para poder trabajar con problemas matemáticos complejos, como de álgebra lineal.
+* **Python:** Da una interfaz más sencilla para poder programar. No requiere tantas declaraciones de variables para poder leer y almacenar información.
+* **C:** Es de bajo nivel, trabaja con muchas estructuras, datos estáticos, pero es muy eficiente.
+
+### BIBLIOGRAFÍA
+1. Fontana, C. L. (s. f.). Using Python and GNU Octave to plot data. Opensource.com. https://opensource.com/article/20/2/python-gnu-octave-data-science
+2. Smalley, S. S. I. (2025, 26 noviembre). ¿Qué es una máquina virtual (VM)? IBM. https://www.ibm.com/mx-es/think/topics/virtual-machines
+3. ¿Qué es Docker y cómo funciona? Ventajas de los contenedores Docker. (s. f.). https://www.redhat.com/es/topics/containers/what-is-docker
+4. Inc, D. (2026, 28 mayo). How Compose works. Docker Documentation. https://docs.docker.com/compose/intro/compose-application-model/
+
+
+
+
