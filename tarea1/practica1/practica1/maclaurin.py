@@ -17,7 +17,7 @@ import math
 
 # ============================= DATOS =============================
 X = 0.5         # el punto donde se evalúa e^x
-CIFRAS = 6      # cifras significativas que se piden            cambio por CIFRAS=6
+CIFRAS = 17     # cifras significativas que se piden            segundo cambio por 17 cifras significativas :)
 NMAX = 30       # máximo de términos
 # =================================================================
 
